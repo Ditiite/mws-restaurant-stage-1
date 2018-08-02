@@ -50,48 +50,40 @@
 }
 
 /* ====================== Restaurant Listing ====================== */
-#restaurants-list 
-{   background-color: #f3f3f3;
-    padding: 60px 100px;
+#restaurants-list {
+    box-sizing: border-box;  
+    background-color: #f3f3f3;
     display: grid;
+    padding: 30px;
     margin: 0;
     text-align: center;
     justify-items: center;
+    list-style: outside none none;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(20, 50px));
-    grid-gap: 40px;
+    grid-gap: 30px;
 }
 
-#restaurants-list {
-    background-color: #f3f3f3;
-    list-style: outside none none;
-    margin: 0;
-    padding: 0px;
-    text-align: center;
-  }
-  
-  #restaurants-list li {
+#restaurants-list li {
     background-color: #fff;
     font-family: Arial,sans-serif;
     min-height: 380px;
     text-align: left;
-    margin-bottom: 15px;
     box-shadow: 0px 2px 3px 0 rgba(50, 50, 50, 0.6);
-  }
+}
   
-  #restaurants-list .restaurant-img {
+#restaurants-list .restaurant-img {
     background-color: #ccc;
     display: block;
     margin: 0;
     max-width: 100%;
     min-height: 248px;
-  }
+}
   
-  #restaurants-list li .summary {
+#restaurants-list li .summary {
     padding: 0px 15px 10px;
-  }
+}
   
-  #restaurants-list li h1 {
+#restaurants-list li h1 {
     color: #f18200;
     /*font-size: 14pt; */
     font-weight: 200;
@@ -99,14 +91,14 @@
     /* line-height: 1.3; */
     /* margin: 20px 0 10px; */
     text-transform: uppercase;
-  }
+}
   
-  #restaurants-list p {
+#restaurants-list p {
     margin: 0;
     font-size: 11pt;
-  }
+}
   
-  #restaurants-list li a {
+#restaurants-list li a {
     background-color: orange;
     border-bottom: 3px solid #eee;
     color: #fff;
@@ -117,4 +109,67 @@
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+
+/* ====================== Restaurant Details ====================== */
+.restaurant-reviews {
+    display: grid; 
+    grid-template-areas:  
+        "header header"
+        "main main"
+        "footer footer";
+}
+
+.restaurant-reviews #footer {
+    grid-area: footer;
+    background-color: #444;
+    color: #aaa;
+    font-size: 8pt;
+    letter-spacing: 1px;
+    padding: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 0;
+}
+
+.restaurant-reviews #maincontent  {
+    padding-top: 85px;
+    display: grid;
+    grid-template-areas:  
+        "restaurant map"
+        "review map";
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+}
+
+.restaurant-reviews header {
+    grid-area: header;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Main contrainer */
+.restaurant-reviews #map-container {
+    position: fixed;
+    right: 0;
+    /* height: 95%; */
+    bottom: 64px;
+    top: 80px;
+    width: 50%;
+}
+
+.restaurant-reviews #map {
+    background-color: #ccc;
+    height: 100%;
+    width: 100%;
+}
+
+.restaurant-reviews #restaurant-container {
+    grid-area: restaurant;
+}
+
+.restaurant-reviews #reviews-container {
+    grid-area: review;
 }

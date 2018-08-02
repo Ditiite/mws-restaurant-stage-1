@@ -53,7 +53,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 
 header, main, footer {
-  width: 100vw;
+  width: 100%;
 }
 
 #maincontent {
@@ -92,7 +92,7 @@ nav h1 a {
 }
 
 #breadcrumb {
-    padding: 10px 40px 16px;
+    /* padding: 10px 40px 16px; */
     list-style: none;
     background-color: #eee;
     font-size: 17px;
@@ -160,11 +160,7 @@ nav h1 a {
   width: 100%;
 }
 
-.inside #footer {
-  bottom: 0;
-  position: absolute;
-  width: 50%;
-}
+
 
 #restaurant-name {
   color: #f18200;
@@ -198,16 +194,17 @@ nav h1 a {
 	width: 90%;
 }
 
-#restaurant-container, #reviews-container {
+#restaurant-container, 
+#reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
-  width: 50%;
+  /* padding: 140px 40px 30px; */
+  width: 100%;
 }
-
+/* 
 #reviews-container {
   padding: 30px 40px 80px;
-}
+} */
 
 #reviews-container h2 {
   color: #f58500;
