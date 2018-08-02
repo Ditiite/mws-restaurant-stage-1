@@ -61,14 +61,15 @@
     list-style: outside none none;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
+    position: relative;
 }
 
 #restaurants-list li {
     background-color: #fff;
     font-family: Arial,sans-serif;
-    min-height: 380px;
     text-align: left;
     box-shadow: 0px 2px 3px 0 rgba(50, 50, 50, 0.6);
+    position: relative;
 }
   
 #restaurants-list .restaurant-img {
@@ -81,6 +82,16 @@
   
 #restaurants-list li .summary {
     padding: 0px 15px 10px;
+}
+
+#restaurants-list li .summary p:last-of-type {
+    padding: 0 0 45px;
+}
+
+
+#restaurants-list li .summary a {
+    position: absolute;
+    bottom: 10px;
 }
   
 #restaurants-list li h1 {
@@ -113,13 +124,7 @@
 
 
 /* ====================== Restaurant Details ====================== */
-.restaurant-reviews {
-    display: grid; 
-    grid-template-areas:  
-        "header header"
-        "main main"
-        "footer footer";
-}
+
 
 .restaurant-reviews #footer {
     grid-area: footer;
