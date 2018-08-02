@@ -1,0 +1,89 @@
+
+/*================= MOBILE ===================*/
+@media (max-width: 800px) {
+    #restaurant-container, 
+    #reviews-container {
+        width: 100%;
+    }
+
+    #reviews-container {
+        padding: 20px 20px 0px;
+    }
+
+    .inside #restaurant-img {
+        border-top-left-radius: 50px;
+        width: 100%;
+    }
+
+    .restaurant-reviews-main {
+        grid-template-columns: 100%;
+        grid-template-areas:  
+            "map"
+            "restaurant" 
+            "review";
+    }
+    
+    #breadcrumb {
+        z-index: 1000;
+        width: 100%;
+    }
+
+    #footer {
+        position: relative;
+    }
+
+    .filter-options {
+        display: grid;
+        grid-template-areas:  
+            "results" 
+            "neighbor" 
+            "cuisins";
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .filter-options h2 {
+        justify-self: center;
+    }
+    
+    /* MAP */
+    .inside #map-container {
+        position: relative;
+        height: 400px;
+        width: 100%;
+        left: 0;
+        top: 102px;
+    }
+
+    #map {
+        width: 100%;
+    }
+
+    .leaflet-bottom {
+        width: 100%;
+    }
+
+    .leaflet-top, .leaflet-bottom {
+        z-index: 999 !important;
+    }
+
+    /* About restaurant */
+    .inside #restaurant-container {
+        padding: 96px 20px 25px;
+        position: relative;
+    }
+
+    .leaflet-bottom,
+    .inside #restaurant-cuisine,
+    .leaflet-control-attribution.leaflet-control {
+        width: 100%;
+    }
+
+    #restaurant-name {
+        font-size: 19pt;
+    }
+
+    nav {
+        padding: 5px;
+    }
+}
