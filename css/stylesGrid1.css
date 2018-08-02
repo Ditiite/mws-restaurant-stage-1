@@ -55,7 +55,7 @@
     background-color: #f3f3f3;
     display: grid;
     padding: 30px;
-    margin: 0 0 65px 0;
+    margin: 0;
     text-align: center;
     justify-items: center;
     list-style: outside none none;
@@ -69,6 +69,7 @@
     min-height: 380px;
     text-align: left;
     box-shadow: 0px 2px 3px 0 rgba(50, 50, 50, 0.6);
+    transition: all 1s ease-in-out;
 }
   
 #restaurants-list .restaurant-img {
@@ -77,6 +78,10 @@
     margin: 0;
     max-width: 100%;
     min-height: 248px;
+}
+  
+#restaurants-list li:hover {
+    transform: scale(1.1);
 }
   
 #restaurants-list li .summary {
@@ -113,7 +118,7 @@
 
 
 /* ====================== Restaurant Details ====================== */
-.restaurant-reviews {
+.inside {
     display: grid; 
     grid-template-areas:  
         "header header"
@@ -121,7 +126,7 @@
         "footer footer";
 }
 
-.restaurant-reviews #footer {
+.inside #footer {
     grid-area: footer;
     background-color: #444;
     color: #aaa;
@@ -134,7 +139,7 @@
     bottom: 0;
 }
 
-.restaurant-reviews #maincontent  {
+.inside #mainscontent  {
     padding-top: 85px;
     display: grid;
     grid-template-areas:  
@@ -160,25 +165,27 @@
     width: 50%;
 }
 
-.restaurant-reviews #map {
+.inside #map {
     background-color: #ccc;
     height: 100%;
     width: 100%;
 }
 
-.restaurant-reviews #restaurant-container {
+.inside #restaurant-container {
     grid-area: restaurant;
+    padding: 2%;
 }
 
-.restaurant-reviews #reviews-container {
+.inside #reviews-container {
     grid-area: review;
+    padding: 2%;
 }
+
 
 /*================= MOBILE ===================*/
-@media (max-width: 580px) {
-    .inside #restaurant-img {
+@media screen and (max-width: 580px) {
+    #restaurant-img {
         border-top-left-radius: 50px;
-        width: 100%;
     }
 
     .restaurant-reviews-main {
@@ -202,19 +209,8 @@
         top: 30px;
     }
 
-    .inside #map-container {
-        position: relative;
-        height: 400px;
-        width: 100vw;
-        left: 0;
-    }
-
     #map {
         width: 100vw;
-    }
-
-    #footer {
-        position: relative;
     }
 
     .filter-options {
@@ -230,22 +226,15 @@
     .filter-options h2 {
         justify-self: center;
     }
-    
-    /* MAP */
-    .inside #map-container {
-        height: 50%;
-        position: relative;
-        right: 0;
-        left: 0;
-        top: 100px;
-        width: 100%;
-    }
-    .leaflet-bottom {
-        width: 100%;
+
+    .inside {
+        grid-template-areas:  
+            "header header"
+            "main main";
     }
 
-    .inside #restaurant-container {
-        padding: 96px 26px 25px;
+    .inside #footer {
         position: relative;
+        bottom: 0;
     }
 }

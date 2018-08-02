@@ -1,3 +1,4 @@
+
 let restaurants,
   neighborhoods,
   cuisines
@@ -74,10 +75,10 @@ fillCuisinesHTML = (cuisines = self.cuisines) => {
  */
 initMap = () => {
   self.newMap = L.map('map', {
-        center: [40.722216, -73.987501],
-        zoom: 12,
-        scrollWheelZoom: false
-      });
+    center: [40.722216, -73.987501],
+    zoom: 12,
+    scrollWheelZoom: false
+  });
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
     mapboxToken: 'pk.eyJ1IjoiZGl0aWl0ZSIsImEiOiJjams2aHV0ajcweHF2M3dta2xlcjdidmFzIn0.auV-eBu7Hrpv2falC0rbrA',
     maxZoom: 18,
@@ -203,7 +204,7 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 
-} 
+}
 /* addMarkersToMap = (restaurants = self.restaurants) => {
   restaurants.forEach(restaurant => {
     // Add marker to the map
@@ -218,8 +219,8 @@ addMarkersToMap = (restaurants = self.restaurants) => {
 function registerServiceWorker(worker) {
   if (navigator.serviceWorker) {
     navigator.serviceWorker.register(worker, {
-        scope: '/'
-      })
+      scope: '/'
+    })
       .then(function (reg) {
         console.log(`Service worker ${worker} registered.`);
       }).catch(function (error) {
