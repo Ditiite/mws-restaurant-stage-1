@@ -188,29 +188,9 @@
             "restaurant" 
             "review";
     }
-
-    .restaurant-reviews-main #map-container {
-        position: relative;
-        right: 0;
-        height: 50vh;
-        /* bottom: 64px; */
-        top: 80px;
-        width: 100%;
-    } 
     
-    .leaflet-top {
-        top: 30px;
-    }
-
-    .inside #map-container {
-        position: relative;
-        height: 400px;
-        width: 100vw;
-        left: 0;
-    }
-
-    #map {
-        width: 100vw;
+    #breadcrumb {
+        z-index: 1000;
     }
 
     #footer {
@@ -233,19 +213,41 @@
     
     /* MAP */
     .inside #map-container {
-        height: 50%;
         position: relative;
-        right: 0;
+        height: 400px;
+        width: 100%;
         left: 0;
-        top: 100px;
+        top: 102px;
+    }
+
+    #map {
         width: 100%;
     }
+
     .leaflet-bottom {
         width: 100%;
     }
 
+    .leaflet-top, .leaflet-bottom {
+        z-index: 999 !important;
+    }
+    /* About restaurant */
     .inside #restaurant-container {
-        padding: 96px 26px 25px;
+        padding: 96px 20px 25px;
         position: relative;
+    }
+
+    .leaflet-bottom,
+    .inside #restaurant-cuisine,
+    .leaflet-control-attribution.leaflet-control {
+        width: 100%;
+    }
+
+    #restaurant-name {
+        font-size: 19pt;
+    }
+
+    /* Review */
+    #reviews-container {
     }
 }
