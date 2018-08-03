@@ -4,22 +4,19 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Raleway', sans-serif;
 }
 
-body,
-td,
-th,
-p {
+body, td, th, p {
     font-size: 1em;
     color: #333;
     line-height: 1.5;
 }
 
 body {
-    background-color: #fdfdfd;
+    background-color: #f3f3f3;
     margin: 0;
     position:relative;
+    font-family: 'Raleway', sans-serif;
 }
 
 ul, 
@@ -94,7 +91,6 @@ nav h1 a {
 }
 
 #breadcrumb {
-    /* padding: 10px 40px 16px; */
     list-style: none;
     background-color: #eee;
     font-size: 17px;
@@ -130,23 +126,13 @@ nav h1 a {
 /* ====================== Map ====================== */
 #map {
     height: 400px;
-    /* width: 100%; */
     background-color: #ccc;
 }
 
 /* ====================== Restaurant Filtering ====================== */
-.option-section {
-    grid-area: options;
-    display: grid;
-    grid-template-areas:  
-        "filter"
-        "list";
-}
-
 .filter-options {
     background-color: #3397DB;
     min-height: 50px;
-    grid-area: filter;
     display: grid;
     grid-template-areas:  
         "results neighbor cuisins";
@@ -246,6 +232,7 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
+/* If is used class name inside, that means that that element is from review section */
 .inside header {
     position: fixed;
     top: 0;
@@ -303,6 +290,8 @@ nav h1 a {
 #restaurant-container {
     padding: 100px 20px 20px;
 }
+
+/* ====================== Restaurant Reviews Details ====================== */
 #restaurant-container, 
 #reviews-container {
     border-bottom: 1px solid #d9d9d9;
@@ -375,13 +364,10 @@ nav h1 a {
     padding: 20px;
 }
 
-
 #restaurant-hours td {
     color: #666;
 }
 
-
-/* ====================== Restaurant Reviews Details ====================== */
 .restaurant-reviews #footer {
     grid-area: footer;
     background-color: #444;
@@ -422,7 +408,6 @@ nav h1 a {
 }
 
 .restaurant-reviews #map {
-    background-color: #ccc;
     height: 100%;
     width: 100%;
 }
