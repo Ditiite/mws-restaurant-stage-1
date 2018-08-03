@@ -5,6 +5,7 @@
     "neighborhood": "Manhattan",
     "photograph": "1.jpg",
     "address": "171 E Broadway, New York, NY 10002",
+    "description": "Restaurant full of people. Lots of different light elements.",
     "latlng": {
       "lat": 40.713829,
       "lng": -73.989667
@@ -44,6 +45,7 @@
     "neighborhood": "Brooklyn",
     "photograph": "2.jpg",
     "address": "919 Fulton St, Brooklyn, NY 11238",
+    "description": "Pizza Margherita, little bit burnt crust, served on blue plate on top of the wooden table.",
     "latlng": {
       "lat": 40.683555,
       "lng": -73.966393
@@ -83,6 +85,7 @@
     "neighborhood": "Manhattan",
     "photograph": "3.jpg",
     "address": "1 E 32nd St, New York, NY 10016",
+    "description": "Empty restaurant with wooden tables and chairs. Metall ventilations on the ceiling and cooking/food heating device in the middle of each table.",
     "latlng": {
       "lat": 40.747143,
       "lng": -73.985414
@@ -122,6 +125,7 @@
     "neighborhood": "Manhattan",
     "photograph": "4.jpg",
     "address": "205 E Houston St, New York, NY 10002",
+    "description": "Night corner street view of the restaurant with the name lighted up in with red lights.",
     "latlng": {
       "lat": 40.722216,
       "lng": -73.987501
@@ -161,6 +165,7 @@
     "neighborhood": "Brooklyn",
     "photograph": "5.jpg",
     "address": "261 Moore St, Brooklyn, NY 11206",
+    "description": "Restaurant full of people, a bar made from bricks, some colorful lights on the wall.",
     "latlng": {
       "lat": 40.705089,
       "lng": -73.933585
@@ -200,6 +205,7 @@
     "neighborhood": "Brooklyn",
     "photograph": "6.jpg",
     "address": "454 Van Brunt St, Brooklyn, NY 11231",
+    "description": "Big old hall, with wooden tables and chairs. People standing in a queue in front of the bar. On wall painted American flag.",
     "latlng": {
       "lat": 40.674925,
       "lng": -74.016162
@@ -239,6 +245,7 @@
     "neighborhood": "Manhattan",
     "photograph": "7.jpg",
     "address": "430 E 9th St, New York, NY 10009",
+    "description": "Black and white image with two men walking the small dog in front of a restaurant full of people.",
     "latlng": {
       "lat": 40.727397,
       "lng": -73.983645
@@ -278,6 +285,7 @@
     "neighborhood": "Manhattan",
     "photograph": "8.jpg",
     "address": "131 Sullivan St, New York, NY 10012",
+    "description": "Gray color building with the name of the restaurant  \"The Dutch\" written in the white and blue-gray background.",
     "latlng": {
       "lat": 40.726584,
       "lng": -74.002082
@@ -317,6 +325,7 @@
     "neighborhood": "Queens",
     "photograph": "9.jpg",
     "address": "1209 Jackson Ave, Queens, NY 11101",
+    "description": "Black and white color image with people sitting around the tables, eating, drinking and checking mobile phones.",
     "latlng": {
       "lat": 40.743797,
       "lng": -73.950652
@@ -356,6 +365,7 @@
     "neighborhood": "Queens",
     "photograph": "10.jpg",
     "address": "5-48 49th Ave, Queens, NY 11101",
+    "description": "White color restaurant with bar, highchairs, and tables.",
     "latlng": {
       "lat": 40.743394,
       "lng": -73.954235

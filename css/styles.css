@@ -59,7 +59,7 @@ header, main, footer {
 }
 
 #footer {
-    background-color: #444;
+    background-color: rgb(44, 44, 44);
     color: #aaa;
     font-size: 0.8em;
     letter-spacing: 1px;
@@ -209,7 +209,7 @@ nav h1 a {
   
 #restaurants-list li h1 {
     color: #f18200;
-    font-weight: 200;
+    font-weight: 400;
     text-transform: uppercase;
 }
   
@@ -219,7 +219,7 @@ nav h1 a {
 }
   
 #restaurants-list li a {
-    background-color: orange;
+    background-color: rgb(255, 145, 0);
     border-bottom: 3px solid #eee;
     color: #fff;
     display: inline-block;
@@ -256,7 +256,7 @@ nav h1 a {
 }
 
 #restaurant-name {
-    color: #f18200;
+    color: #a25800;
     font-size: 1.4em;
     font-weight: 200;
     letter-spacing: 0;
