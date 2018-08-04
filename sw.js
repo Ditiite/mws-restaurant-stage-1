@@ -10,6 +10,7 @@ self.addEventListener('install', (event) => {
         '/restaurant.html',
         // Styles
         '/css/styles.css',
+        '/css/media.css',
         // Scripts
         '/js/main.js',
         '/js/dbhelper.js',
