@@ -33,7 +33,11 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(
         caches.open(CACHE_KEY)
         .then((cache) => {
-            return cache.match(event.request)
+            // Cache first implementation
+            return cache.match(event.request, {
+                    // Ignores query parameters when searching our cache
+                    ignoreSearch: true
+                })
                 .then((cachedResponse) => {
                     if (cachedResponse) {
                         return cachedResponse;

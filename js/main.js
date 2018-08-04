@@ -6,7 +6,7 @@ var newMap
 var markers = []
 
 // Should be disable while developing
-// registerServiceWorker('/sw.js');
+registerServiceWorker('/sw.js');
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
