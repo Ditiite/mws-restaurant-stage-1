@@ -73,9 +73,13 @@ header, main, footer {
 /* ====================== Navigation ====================== */
 nav {
     width: 100%;
-    padding: 15px 0px;
-    background-color: #252831;
+    /* background-color: #252831; */
     text-align:center;
+}
+
+.banner {
+    background-color: #252831;
+    padding: 15px 0px;
 }
 
 nav h1 {
